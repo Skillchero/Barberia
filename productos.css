@@ -1,0 +1,301 @@
+
+/*menu*/
+header {
+    background-color: #BBBBBB;
+    /*color de fondo de la cabezera*/
+}
+.caja{
+    /*tamaño del cuadrado de div*/
+    width: 940px;
+    position: relative;
+    /*cambiamos la posicion de absoluta a relativa*/
+    margin: 0 auto;
+    /*con esto le damos una margen a la imagen y menu dentro del div
+    automatico es pora que los objetos se ajusten al tamaño de la pantalla*/
+    padding: 20px 0;
+    /*espaciamiento exterior*/
+}
+nav{
+    /*posición del menu de manera fija*/
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    /*margen o espacio de texto*/
+}
+nav a {
+    text-transform: uppercase;
+    /*letras mayusculas*/
+    color: #000000;
+    font-weight: bold;
+    /*La propiedad font-weight sirve para alterar el peso de la fuente, inclusive para negrita, con el valor bold.*/
+    font-size: 22px;
+    /*tamaño de la fuente*/
+    text-decoration: none;
+    /*quitando decoreción de textos link*/
+}
+nav a:hover{
+    /*hover captura el movimiento del mause*/
+    color: #c78c19;
+     /*regresamos la decoreción de textos link*/
+    text-decoration: underline; 
+}
+
+    /*ESTILOS PRODUCOS*/
+    .productos{
+        /*tamaño del cuadrado*/
+        width: 940px;
+        margin: 0 auto;
+        /*espaciamiento*/
+        padding: 50px;    
+    }
+    .productos li{
+        /*anulamos la lista por defecto*/
+        display: inline-block;
+        /*alineación de texto al centro*/
+        text-align: center;
+        /*espacio dentro de la lista*/
+        width: 30%;
+        /**/
+        vertical-align:top;
+        /*separacion de casilleros*/
+        margin: 0 1.5%;
+        /*separacion de texto e imagen dentro de la casilla*/
+        padding: 30px 20px;
+        /*alineamiento de las casillas dentro del area de trabajo*/
+        box-sizing: border-box;
+        /*
+        border-color: #000000;
+        /*color del borde del li
+        border-width: 2px;
+        /*tamaño del borde
+        border-style: solid;
+        /*el estilo del borde
+        */
+        /*forma simplificada de colocar caracteristicas al borde*/
+        border: 2px solid #000000;
+        border-radius: 10px ;
+        /* le da el borde al li se coloca una sola medida si todos los bordes son iguales, en caso no se colocan los tamaños ejm: 20px 10px 20 px 10px; <--- asi*/
+    }
+    .productos h2{
+        font-size: 30px;
+        /*tamaño de la letra*/
+        font-weight: bold;
+        /*fuente*/    
+    }
+    .producto-descripcion{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .producto-precio{
+        font-size: 20px;
+        font-weight: bold; 
+        margin-top: 10px;
+    }
+
+    /*Acciones interactivas con el mause*/
+    .productos li:hover{
+        border-color: #c78c19;
+    }
+    .productos li:active{
+        /*acciones de clic en el li*/
+        border-color: #088c19
+    }
+    .productos li:hover h2{
+        font-size :33px;
+    }
+        footer{
+            text-align: center;
+            background: url(imagenes/bg.jpg);
+            padding:40px;
+        }
+        .copyright{
+            color: white;
+            font-size: 13px;
+        }
+
+
+
+/* CSS contacto.html*/
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0 ;
+}
+form label, form legend{
+    /*tamaño letra del label - p*/
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    /*estilo de los label*/
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;  
+}
+select{
+    font-size: 15px;
+}
+
+    /*botton submit
+    form input[type="submit"]*/
+    .enviar{
+        width: 40%;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: black;
+        border-radius: 8px;
+        transition:1s all;/*all transision mas lenta*/
+        cursor: pointer;
+    }
+    .enviar:hover{
+        transform: scale(1.1) /*rotate(3deg)*/;
+        background: white;
+        font-weight: bold;
+        color: black;
+        /*transform:rotate(10deg); el tranform ayuda a que los objetos tengan mayor interaccion dentro del diseño, en cada objeto solo puede haber un transform por sepadarado deben ir juntos en el transform*/  
+    }
+
+            /*tabla*/
+            table{
+                margin: 40px 40px;
+            }
+            thead{
+                background-color: #555555;
+                color: white;
+                font-weight: bold;
+            }
+            th,td{
+                border: 1px solid black;
+                padding: 8px 15px;
+            }
+
+/*CSS para el index*/
+
+.banner{
+    width: 100%;
+    /*tamaño del banner*/
+}
+/*
+main > p{
+    background: red;
+}
+img + p{aplicael css a el parrafo que viene despues de una imagen
+    background: yellowgreen;
+    }
+ */
+
+    /*primera section*/
+
+    .principal{
+        padding: 3em 0;
+        background-color: #FEFEFE;
+        width: 940px;
+        margin: 0 auto;
+    }
+    .titulo-principal{
+        text-align: center;
+        font-size: 2em;/*tamano de funete 2em significa dos veces el tamaño por defecto de navegador*/
+        margin: 0 0 1em;
+        clear: left;
+        /*opacidad de los textos -- el ultimo digito indica el % de opacidad del css*/
+        color: rgba(0, 0, 0, 0.30);
+    }
+        /*imagen dentro del texto*/
+        .utensilios{
+            width: 14%;
+            border-radius: 10px;
+            float: left;
+            margin: 0 20px 20px 0;
+        }/*-----*/
+
+    .principal p{
+        margin: 0 0 1em;
+    }
+    .principal strong{
+        font-weight: bold;
+    }
+    .principal em{
+        font-style: italic;
+    }
+    /*mapa*/
+        .mapa{
+            width: 100%;
+            margin: 0 0 60px 0;
+        }
+        .mapa p{
+            margin: 0 0 2em;
+            text-align: center;
+        }
+        .mapa-contenido{
+            width: 640px;
+            margin: 0 auto;
+        }
+
+            /*tercera section*/
+            .diferenciales{
+                padding: 3em 0;
+                background: #888888;
+            }
+            .contenido-diferenciales{
+                width: 640px;
+                margin: 0 auto;
+            }
+            .lista-diferenciales{
+                width:40%;
+                display: inline-block;
+                vertical-align: top;
+            }
+            .items{
+                /*espaciado de los items*/
+                line-height: 1.5;               
+            }
+            .items::before{
+                content: "*";
+            }
+            .items:first-child{
+                font-weight: bold;
+            }
+
+                .imagen-diferenciales{
+                    width: 60%;
+                    transition: 400ms;
+                    box-shadow: 10px 10px #000000;/*sonbra de la imagen*/
+                }
+                .imagen-diferenciales:hover{
+                    opacity: 0.40; /*opaca la imagen y tambien los textos que se desen*/
+                }
+
+                    .video{
+                        width: 560px;
+                        margin: 1em auto;
+                    }
+
+/*pagina resposiba*/
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+}
